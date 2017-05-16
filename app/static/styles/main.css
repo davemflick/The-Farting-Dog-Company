@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #ddd; }
+
+.navbar-brand {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar-brand .navLogo {
+    height: 45px;
+    margin: 0;
+    display: inline-block; }
+  .navbar-brand .companyName {
+    display: inline-block; }
+
+@media screen and (max-width: 400px) {
+  .navbar-brand {
+    width: 200px; }
+    .navbar-brand .companyName {
+      display: none; } }
+.navbar-right {
+  margin-right: 30px; }
+
+/*# sourceMappingURL=Main.css.map */
