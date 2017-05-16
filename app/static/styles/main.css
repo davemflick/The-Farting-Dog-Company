@@ -4,10 +4,11 @@
 body {
   margin: 0;
   width: 100%;
-  background-color: #ddd; }
+  background-color: #ddd;
+  text-align: center; }
 
 .navbar-brand {
-  width: 330px;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -19,11 +20,35 @@ body {
     display: inline-block; }
 
 @media screen and (max-width: 400px) {
-  .navbar-brand {
-    width: 200px; }
-    .navbar-brand .companyName {
-      display: none; } }
+  .navbar-brand .companyName {
+    display: none; } }
 .navbar-right {
   margin-right: 30px; }
+
+.banner {
+  margin-top: 50px;
+  height: 410px;
+  width: 100%;
+  background-color: #E5DFCD;
+  padding-top: 25px; }
+  .banner .descriptionContainer {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .banner .descriptionContainer .aboutFDC {
+      width: 55%; }
+    .banner .descriptionContainer .logoContainer {
+      width: 40%;
+      height: 100%; }
+      .banner .descriptionContainer .logoContainer .bannerLogo {
+        height: 300px; }
+  @media screen and (max-width: 700px) {
+    .banner .descriptionContainer {
+      flex-wrap: wrap; }
+      .banner .descriptionContainer .logoContainer {
+        display: none; }
+      .banner .descriptionContainer .aboutFDC {
+        width: 100%; } }
 
 /*# sourceMappingURL=Main.css.map */

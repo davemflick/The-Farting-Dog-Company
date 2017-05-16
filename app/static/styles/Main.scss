@@ -4,6 +4,45 @@ body{
 	margin: 0;
 	width: 100%;
 	background-color: #ddd;
+	text-align: center;
 }
 
 @import "partials/Nav";
+
+
+.banner {
+	margin-top: 50px;
+	height: 410px;
+	width: 100%;
+	background-color: #E5DFCD;
+	padding-top: 25px;
+	.descriptionContainer {
+		height: 300px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.aboutFDC{
+			width: 55%;
+		}
+		.logoContainer{
+			width: 40%;
+			height: 100%;
+			.bannerLogo {
+				height: 300px;
+			}
+		}
+	}
+	@media screen and (max-width: 700px){
+		.descriptionContainer{
+			flex-wrap: wrap;
+			.logoContainer {
+				display: none;
+			}
+			.aboutFDC {
+				width: 100%;
+			}
+		}
+	}
+
+	
+}

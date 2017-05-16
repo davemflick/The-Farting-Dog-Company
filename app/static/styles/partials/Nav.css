@@ -1,5 +1,5 @@
 .navbar-brand {
-  width: 330px;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -11,10 +11,8 @@
     display: inline-block; }
 
 @media screen and (max-width: 400px) {
-  .navbar-brand {
-    width: 200px; }
-    .navbar-brand .companyName {
-      display: none; } }
+  .navbar-brand .companyName {
+    display: none; } }
 .navbar-right {
   margin-right: 30px; }
 
