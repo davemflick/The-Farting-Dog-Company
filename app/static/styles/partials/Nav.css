@@ -1,19 +1,23 @@
-.navbar-brand {
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .navbar-brand .navLogo {
-    height: 45px;
-    margin: 0;
-    display: inline-block; }
-  .navbar-brand .companyName {
-    display: inline-block; }
+@media (max-width: 767px) {
+  .navbar-brand {
+    display: flex;
+    justify-content: center; }
+    .navbar-brand .navLogo {
+      height: 42px !important;
+      width: 55px  !important;
+      margin-top: -14px !important;
+      background-image: url("../images/logo1.png") !important;
+      background-size: cover !important; } }
+.navbar-brand .navLogo {
+  height: 115px;
+  width: 115px;
+  margin-top: -20px;
+  background-image: url("../images/logo2.png");
+  background-size: cover; }
 
-@media screen and (max-width: 400px) {
-  .navbar-brand .companyName {
-    display: none; } }
 .navbar-right {
-  margin-right: 30px; }
+  margin-right: 40px; }
+  .navbar-right .pdLink {
+    margin-right: 40px; }
 
 /*# sourceMappingURL=Nav.css.map */

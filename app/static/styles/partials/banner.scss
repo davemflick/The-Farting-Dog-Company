@@ -1,0 +1,62 @@
+.banCont {
+	background-image: url('../images/beachDog.jpeg');
+	background-repeat: none;
+	background-size: cover;
+	.titleCont{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 50px;
+		.headLogo{
+			height: 50px;
+			margin-left: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 550px){
+	.titleCont{
+		flex-wrap: wrap;
+		.header{
+			width: 100%;
+		}
+		.headLogo{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+.banner {
+	margin-top: 50px;
+	height: 600px;
+	width: 100%;
+	padding-top: 50px;
+	background: rgba(190,190,190, 0.5);
+	z-index: 5;
+	.descriptionContainer {
+		height: 450px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-weight: bolder;
+		.logoContainer{
+			width: 40%;
+		}
+		.aboutFDC{
+			width: 55%;
+			color: #fff;
+			margin: 0;
+		}
+	}
+	@media screen and (max-width: 767px){
+		.descriptionContainer{
+			flex-wrap: wrap;
+			height: 250px;
+			.aboutFDC {
+				width: 100%;
+			}
+		}
+	}
+}
