@@ -76,4 +76,19 @@ body {
       .banner .descriptionContainer .aboutFDC {
         width: 100%; } }
 
+.toyContainer {
+  width: 100%;
+  padding: 15px 0; }
+  .toyContainer .individualToys {
+    display: flex;
+    align-items: center; }
+    .toyContainer .individualToys .toyImage {
+      width: 40%;
+      height: 250px;
+      border-right: 3px solid black; }
+      .toyContainer .individualToys .toyImage .imageOfToy {
+        height: 100%; }
+    .toyContainer .individualToys .productDetails {
+      width: 60%; }
+
 /*# sourceMappingURL=Main.css.map */
