@@ -6,7 +6,7 @@ export default class Header extends React.Component{
   render(){
     return(
      <div className="headerContainer">
-       <Navbar />
+       <Navbar fartSound={this.props.fartSound}/>
        <Banner />
      </div>
     )

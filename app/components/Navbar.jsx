@@ -6,7 +6,7 @@ export default class Navbar extends React.Component{
       <div>
       <nav className="navbar navbar-default navbar-fixed-top">
         <div className="navbar-header"> 
-          <a className="navbar-brand" href="#"><div className="navLogo" ></div></a>
+          <a className="navbar-brand" href="#"><div className="navLogo" onClick={this.props.fartSound} ></div></a>
           <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span className="sr-only">toggle navigation</span>
             <span className="icon-bar"></span>
@@ -14,7 +14,7 @@ export default class Navbar extends React.Component{
             <span className="icon-bar"></span>
           </button>
         </div>
-        <ul className="nav navbar-nav navbar-right collapse navbar-collapse">
+        <ul className="nav navbar-nav navbar-right collapse navbar-collapse" onClick={this.props.fartSound}>
           <li><a className='pdLink' href="#about">About</a></li>
           <li><a className='pdLink' href="#toys">Toys</a></li>
           <li><a className='pdLink' href="#contact">Contact</a></li>
