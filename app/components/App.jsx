@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from './Header.jsx';
 import Banner from './Banner.jsx';
 import Toys from './Toys.jsx';
+import Footer from './Footer.jsx';
 
 var fart1 = new Audio('./app/static/sounds/fart1.mp3');
 export default class App extends React.Component{
@@ -17,6 +18,7 @@ export default class App extends React.Component{
         <Header fartSound={this.playFartSound}/>
         <Banner />
         <Toys />
+        <Footer />
       </div>
     )
   }

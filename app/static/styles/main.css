@@ -78,17 +78,38 @@ body {
 
 .toyContainer {
   width: 100%;
-  padding: 15px 0; }
+  background-color: #333;
+  padding-top: 0; }
+  .toyContainer .titleCont {
+    background-color: #f6f6f6;
+    margin-top: 0;
+    padding: 15px; }
   .toyContainer .individualToys {
     display: flex;
-    align-items: center; }
+    flex-wrap: wrap;
+    align-items: center;
+    color: #f6f6f6;
+    padding: 20px 0; }
     .toyContainer .individualToys .toyImage {
       width: 40%;
       height: 250px;
-      border-right: 3px solid black; }
+      border-right: 3px solid #bbb; }
       .toyContainer .individualToys .toyImage .imageOfToy {
-        height: 100%; }
+        height: 100%;
+        border: 2px solid black;
+        border-radius: 20px; }
     .toyContainer .individualToys .productDetails {
-      width: 60%; }
+      width: 60%;
+      padding: 10px; }
+
+@media screen and (max-width: 660px) {
+  .individualToys .productDetails {
+    width: 100% !important; }
+  .individualToys .toyImage {
+    width: 100% !important;
+    border-right: none !important; } }
+.footerContainer {
+  padding: 1em;
+  font-family: none; }
 
 /*# sourceMappingURL=Main.css.map */

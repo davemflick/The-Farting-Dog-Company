@@ -10,28 +10,11 @@ body{
 
 @import "partials/Nav";
 @import "partials/banner";
+@import "partials/toys";
 
-
-.toyContainer {
-	width: 100%;
-	padding: 15px 0;
-	.individualToys{
-
-		display: flex;
-		align-items: center;
-		.toyImage{
-			width: 40%;
-			height: 250px;
-			border-right: 3px solid black;
-			.imageOfToy{
-				height: 100%;
-			}
-		}
-		.productDetails{
-			width: 60%;
-			
-		}
-	}
+.footerContainer {
+	padding: 1em;
+	font-family: none;
 }
 
 
