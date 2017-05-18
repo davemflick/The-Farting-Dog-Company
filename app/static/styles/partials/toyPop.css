@@ -1,0 +1,112 @@
+.toyModal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 15;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #E5DFCD !important;
+  /* Fallback color */
+  background-color: #e5dfcd !important;
+  /* Black w/ opacity */
+  color: #444 !important; }
+  .toyModal .contentModal {
+    background-color: white;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 30px 20px 200px 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.productContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .productContent .toyImages {
+    width: 30%;
+    margin-top: 20px; }
+    .productContent .toyImages .poppedImg {
+      margin: 0 auto;
+      height: 250px;
+      border: 1px solid black;
+      border-radius: 20px; }
+  .productContent .productDetails {
+    width: 50%;
+    margin-top: 20px;
+    font-size: 18px; }
+
+@media screen and (max-width: 925px) and (min-width: 800px) {
+  .toyImages {
+    width: 35% !important; }
+
+  .productDetails {
+    width: 40% !important; } }
+@media screen and (max-width: 799px) {
+  .productContent {
+    flex-wrap: wrap !important; }
+    .productContent .toyImages {
+      width: 100% !important; }
+    .productContent .productDetails {
+      width: 100% !important; } }
+@media screen and (max-width: 400px) {
+  .poppedImg {
+    height: 200px !important; } }
+.ifColors {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ifColors .colOptions {
+    padding-top: 5px; }
+  .ifColors .colOpt {
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black; }
+  .ifColors #Bone_Shape_red {
+    background-color: #D6212A; }
+  .ifColors #Bone_Shape_orange {
+    background-color: #EF5C40; }
+  .ifColors #Bone_Shape_pink {
+    background-color: #FBABC1; }
+  .ifColors #Bone_Shape_green {
+    background-color: #ACD18D; }
+  .ifColors #Bone_Shape_blue {
+    background-color: #B1CDD8; }
+  .ifColors #Tug_N_Toss_red {
+    background-color: #CA1B28; }
+  .ifColors #Tug_N_Toss_green {
+    background-color: #669163; }
+  .ifColors #Tug_N_Toss_blue {
+    background-color: #3788C0; }
+  .ifColors #Tug_N_Toss_teal {
+    background-color: #95D3DC; }
+  .ifColors #Tug_N_Toss_redBlue {
+    background-image: url("../images/redBlueTnT.jpeg");
+    background-size: cover; }
+  .ifColors #Tug_N_Toss_tealBlue {
+    background-image: url("../images/tealBlueTnT.jpeg");
+    background-size: cover; }
+
+/*# sourceMappingURL=toyPop.css.map */

@@ -15,14 +15,35 @@ export default class ToyPopUp extends React.Component{
 		return images;
 	}
 
+	addColors(col){
+		let colorArr = [<p className="colOptions" key="key">Colors</p>];
+		let i = 0;
+		if(col.colors){
+			col.colors.forEach(color=>{ colorArr.push(
+			<div className="colOpt" id={`${col.id}_${color}`} key={i}></div>);
+			i++});
+		}
+		return colorArr;
+	}
+
 	render(){
 		return(
 			<div className='toyModal' id={this.props.toyPop.id} style={this.props.styleModal} onClick={this.props.close}>
 				<div className="contentModal" id='not'>
 					<span className="close" id={this.props.toyPop.id} onClick={this.props.close}>X</span>
 					<h1>{this.props.toyPop.name}</h1>
-					<div className="toyImages">	
-						{this.mapImages(this.props.toyImgColl)}
+					<div className="productContent">
+						<div className="toyImages">	
+							{this.mapImages(this.props.toyImgColl)}
+						</div>
+						<div className="productDetails">
+							<h4>{this.props.toyPop.description}</h4>
+							<p>Starting at ${this.props.toyPop.price}</p>
+							<h3>Options </h3>
+							<div className="ifColors">
+							{this.addColors(this.props.toyPop)}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

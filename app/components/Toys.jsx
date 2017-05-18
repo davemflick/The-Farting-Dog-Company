@@ -11,6 +11,7 @@ const GIRAFFE = {
 	'This toy is not indestructible and best to monitor your pet while playing with it. If your pet finds access to the sound insert, please throw away. The sound module is not for play if exposed.',
 	],
 	more: 'Gilbert the Farting Giraffe is a great excuse to blame the dog! Made of plush, non-toxic materials, the toy is designed for extra durability and extra laughs. Made in China. Non-toxic polyfill interior and the sound insert is ROHS compliant.',
+	price: 15,
 }
 
 const ROPE_BONE ={
@@ -21,6 +22,8 @@ const ROPE_BONE ={
 	about: ['HEALTHY FOR YOUR PETS TEETH AND GUMS fun way to keep up on your pets dental hygiene!',
 	' DESIGNED FOR SMALL TO MEDIUM DOGS This toy is made of high quality, woven-rope ideal for small to medium sized dogs!',
 	' SOAK IN WATER AND FREEZE Great summer treat when it’s a little toasty outside!',],
+	price: 10,
+	colors: ['red', 'pink', 'orange', 'green', 'blue'],
 }
 
 const TUG_N_TOSS = {
@@ -32,6 +35,8 @@ const TUG_N_TOSS = {
 	'HEALTHY FOR YOUR PETS TEETH AND GUMS fun way to keep up on your pets dental hygiene!',
 	' DESIGNED FOR SMALL TO MEDIUM DOGS This toy is made of high quality, woven-rope ideal for small to medium sized dogs!',
 	' SOAK IN WATER AND FREEZE Great summer treat when it’s a little toasty outside!',],
+	price: 10,
+	colors: ['red', 'green', 'blue', 'teal', 'redBlue', 'tealBlue'],
 }
 
 const PROCEEDS = { strong: "5% OF PROFITS DONATED FOR HOMELESS PETS",

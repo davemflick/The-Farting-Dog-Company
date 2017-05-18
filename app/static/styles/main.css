@@ -30,6 +30,13 @@ body {
   .navbar-right .pdLink {
     margin-right: 40px; }
 
+.pdLinks {
+  -ms-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+
 .banCont {
   background-image: url("../images/beachDog.jpeg");
   background-repeat: none;
@@ -51,7 +58,6 @@ body {
     .titleCont .headLogo {
       margin-bottom: 20px; } }
 .banner {
-  margin-top: 50px;
   height: 600px;
   width: 100%;
   padding-top: 50px;
@@ -123,10 +129,6 @@ body {
   .individualToys .toyImage {
     width: 100% !important;
     border-right: none !important; } }
-.footerContainer {
-  padding: 1em;
-  font-family: none; }
-
 .toyModal {
   display: none;
   /* Hidden by default */
@@ -145,7 +147,8 @@ body {
   background-color: #E5DFCD !important;
   /* Fallback color */
   background-color: #e5dfcd !important;
-  /* Black w/ opacity */ }
+  /* Black w/ opacity */
+  color: #444 !important; }
   .toyModal .contentModal {
     background-color: white;
     margin: 15% auto;
@@ -168,9 +171,81 @@ body {
   text-decoration: none;
   cursor: pointer; }
 
-.poppedImg {
-  height: 250px;
-  border: 1px solid black;
-  border-radius: 20px; }
+.productContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .productContent .toyImages {
+    width: 30%;
+    margin-top: 20px; }
+    .productContent .toyImages .poppedImg {
+      margin: 0 auto;
+      height: 250px;
+      border: 1px solid black;
+      border-radius: 20px; }
+  .productContent .productDetails {
+    width: 50%;
+    margin-top: 20px;
+    font-size: 18px; }
+
+@media screen and (max-width: 925px) and (min-width: 800px) {
+  .toyImages {
+    width: 35% !important; }
+
+  .productDetails {
+    width: 40% !important; } }
+@media screen and (max-width: 799px) {
+  .productContent {
+    flex-wrap: wrap !important; }
+    .productContent .toyImages {
+      width: 100% !important; }
+    .productContent .productDetails {
+      width: 100% !important; } }
+@media screen and (max-width: 400px) {
+  .poppedImg {
+    height: 200px !important; } }
+.ifColors {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ifColors .colOptions {
+    padding-top: 5px; }
+  .ifColors .colOpt {
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black; }
+  .ifColors #Bone_Shape_red {
+    background-color: #D6212A; }
+  .ifColors #Bone_Shape_orange {
+    background-color: #EF5C40; }
+  .ifColors #Bone_Shape_pink {
+    background-color: #FBABC1; }
+  .ifColors #Bone_Shape_green {
+    background-color: #ACD18D; }
+  .ifColors #Bone_Shape_blue {
+    background-color: #B1CDD8; }
+  .ifColors #Tug_N_Toss_red {
+    background-color: #CA1B28; }
+  .ifColors #Tug_N_Toss_green {
+    background-color: #669163; }
+  .ifColors #Tug_N_Toss_blue {
+    background-color: #3788C0; }
+  .ifColors #Tug_N_Toss_teal {
+    background-color: #95D3DC; }
+  .ifColors #Tug_N_Toss_redBlue {
+    background-image: url("../images/redBlueTnT.jpeg");
+    background-size: cover; }
+  .ifColors #Tug_N_Toss_tealBlue {
+    background-image: url("../images/tealBlueTnT.jpeg");
+    background-size: cover; }
+
+.navBarBumper {
+  width: 100%;
+  height: 50px; }
+
+.footerContainer {
+  padding: 1em;
+  font-family: none; }
 
 /*# sourceMappingURL=Main.css.map */

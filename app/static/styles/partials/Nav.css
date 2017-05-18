@@ -20,4 +20,11 @@
   .navbar-right .pdLink {
     margin-right: 40px; }
 
+.pdLinks {
+  -ms-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+
 /*# sourceMappingURL=Nav.css.map */
