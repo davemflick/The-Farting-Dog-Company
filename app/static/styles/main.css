@@ -78,22 +78,19 @@ body {
 
 .toyContainer {
   width: 100%;
-  background-color: #333;
+  background-color: #ddd;
   padding-top: 0; }
   .toyContainer .titleCont {
-    background-color: #f6f6f6;
     margin-top: 0;
     padding: 15px; }
   .toyContainer .individualToys {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    color: #f6f6f6;
     padding: 20px 0; }
     .toyContainer .individualToys .toyImage {
       width: 40%;
-      height: 250px;
-      border-right: 3px solid #bbb; }
+      height: 250px; }
       .toyContainer .individualToys .toyImage .imageOfToy {
         height: 100%;
         border: 2px solid black;
@@ -101,6 +98,24 @@ body {
     .toyContainer .individualToys .productDetails {
       width: 60%;
       padding: 10px; }
+
+#Gilbert {
+  background-color: #333;
+  color: #ddd; }
+  #Gilbert .toyImage {
+    border-right: 3px solid #ddd; }
+
+#Bone_Shape {
+  background-color: #ddd;
+  color: #333; }
+  #Bone_Shape .toyImage {
+    border-right: 3px solid #333; }
+
+#Tug_N_Toss {
+  background-color: #333;
+  color: #ddd; }
+  #Tug_N_Toss .toyImage {
+    border-right: 3px solid #ddd; }
 
 @media screen and (max-width: 660px) {
   .individualToys .productDetails {
