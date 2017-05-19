@@ -42,6 +42,13 @@
     .toyImages{
         width: 30%;
         margin-top: 20px;
+        .nextPic{
+            border: none;
+            background: none;
+            font-size: 25px;
+            position: relative;
+            left: 10px;
+        }
         .poppedImg{
             margin: 0 auto;
             height: 250px;
@@ -53,6 +60,10 @@
         width: 50%;
         margin-top: 20px;
     }
+}
+
+.nextPic:hover{
+    color: red;
 }
 
 @media screen and (max-width: 925px) and (min-width: 800px){
@@ -78,6 +89,8 @@
         height: 200px !important;
     }
 }
+
+
 
 
 //ROPE BONES

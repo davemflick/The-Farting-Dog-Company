@@ -47,6 +47,12 @@
   .productContent .toyImages {
     width: 30%;
     margin-top: 20px; }
+    .productContent .toyImages .nextPic {
+      border: none;
+      background: none;
+      font-size: 25px;
+      position: relative;
+      left: 10px; }
     .productContent .toyImages .poppedImg {
       margin: 0 auto;
       height: 250px;
@@ -54,6 +60,9 @@
   .productContent .productDetails {
     width: 50%;
     margin-top: 20px; }
+
+.nextPic:hover {
+  color: red; }
 
 @media screen and (max-width: 925px) and (min-width: 800px) {
   .toyImages {

@@ -4,7 +4,7 @@ import ToyPopUp from './ToyPopUp.jsx';
 const GIRAFFE = {
 	id: 'Gilbert',
 	name: 'GILBERT THE FARTING GIRAFFE',
-	pic: ['./app/static/images/giraffe.jpeg'],
+	pic: ['giraffe.jpeg'],
 	description: "Gilbert has a high fiber diet and with that is a whole lotta ruckus! Squeeze Gilberts belly and be prepared for an unruly sound.",
 	about: ['HIGH QUALITY AND DURABLE Gilbert is double stitched, interior mesh lining for extra durability, and a plush outside material.',
 	'SAFE FOR YOUR FUR BABY Gilbert is double stitched, interior mesh lining for extra durability, and a plush outside material.',
@@ -19,7 +19,7 @@ const GIRAFFE = {
 const ROPE_BONE ={
 	id: 'Bone_Shape',
 	name: "Bone Shape Rope Toy",
-	pic: ['./app/static/images/boneRope.jpeg'],
+	pic: ['boneRope.jpeg', 'redBoneRope.jpeg', 'greenBoneRope.jpeg', 'pinkBoneRope.jpeg', 'blueBoneRope.jpeg', 'orangeBoneRope.jpeg'],
 	description: "Made of 100% cotton. Tightly woven rope shaped into a bone, durable and non-toxic material ideal for your pets play",
 	about: ['HEALTHY FOR YOUR PETS TEETH AND GUMS fun way to keep up on your pets dental hygiene!',
 	' DESIGNED FOR SMALL TO MEDIUM DOGS This toy is made of high quality, woven-rope ideal for small to medium sized dogs!',
@@ -33,7 +33,7 @@ const ROPE_BONE ={
 const TUG_N_TOSS = {
 	id: 'Tug_N_Toss',
 	name: "Tug-n-Toss Rope Toy",
-	pic: ['./app/static/images/tugNToss.jpeg'],
+	pic: ['tugNToss.jpeg', 'blueTnT.jpeg', 'tealTnT.jpeg', 'redTnT.jpeg', 'greenTnT.jpeg', 'blueTealTnT.jpeg', 'blueRedTnT.jpeg'],
 	description: "Made of 100% cotton. Tightly woven rope, durable and non-toxic material ideal for your pets play",
 	about: [' GREAT TOY TO INTERACT WITH YOUR PET Handle makes it easy to interact with your pup, play tug-of-war, and toss!',
 	'HEALTHY FOR YOUR PETS TEETH AND GUMS fun way to keep up on your pets dental hygiene!',
@@ -55,6 +55,7 @@ export default class Toys extends React.Component{
 			Gilbert_modal: {display: 'none'},
 			Bone_Shape_modal: {display: 'none'},
 			Tug_N_Toss_modal: {display: 'none'},
+			curImg: 0,
 			//fartSound: new Audio('./app/static/sounds/fart2.mov'),
 		}
 		this.showModal = this.showModal.bind(this);
@@ -71,6 +72,7 @@ export default class Toys extends React.Component{
 	closeModal(e){
 		let id= e.target.id + '_modal';
 		this.state[id] = {display: 'none'};
+		this.state.curImg = 0;
 		this.setState(this.state);
 	}
 	
@@ -78,9 +80,9 @@ export default class Toys extends React.Component{
 		return(
 			<div className="individualToys" id={toy.id}>
 			  <div className="toyImage">
-			   <img className="imageOfToy" src={toy.pic[0]} alt={toy.name} id={toy.id} onClick={this.showModal} />
+			   <img className="imageOfToy" src={"./app/static/images/" + toy.pic[0]} alt={toy.name} id={toy.id} onClick={this.showModal} />
 			  </div>
-			  <ToyPopUp id={toy.id + 'modal'} toyPop={toy} styleModal={this.state[toy.id + '_modal']} toyImgColl={toy.pic} close={this.closeModal} />
+			  <ToyPopUp id={toy.id + 'modal'} toyPop={toy} styleModal={this.state[toy.id + '_modal']} toyImgColl={toy.pic} close={this.closeModal} curImg={this.state.curImg} />
 			  <div className="productDetails">
 			   <h3>{toy.name}</h3>
 			   <p>{toy.description}</p>
