@@ -10,14 +10,16 @@ export default class App extends React.Component{
     super(props);
     this.state = {
       fartSounds: [new Audio('./app/static/sounds/fart1.mov'),
-      new Audio('./app/static/sounds/fart2.mov')]
+      new Audio('./app/static/sounds/fart2.mov'),
+      new Audio('./app/static/sounds/fart3.mov'),
+      new Audio('./app/static/sounds/fart4.mov')]
     }
+    this.playFartSound = this.playFartSound.bind(this);
   }
 
   playFartSound(e){
-  	let rand = Math.floor(Math.random() * 2);
+  	let rand = Math.floor(Math.random() * this.state.fartSounds.length);
     this.state.fartSounds[rand].play();
-    console.log(rand)
   }
 
   render(){

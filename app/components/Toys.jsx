@@ -59,7 +59,7 @@ export default class Toys extends React.Component{
 	}
 
 	showModal(e){
-		this.props.fartSound;
+		this.props.fartSound();
 		let id= e.target.id + '_modal';
 		this.state[id] = {display: 'block'};
 		this.setState(this.state);
