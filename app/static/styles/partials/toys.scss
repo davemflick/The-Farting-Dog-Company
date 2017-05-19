@@ -1,6 +1,9 @@
+$darkGray: #7B7367;
+$lightGray: #fff;
+
 .toyContainer {
 	width: 100%;
-	background-color: #ddd;
+	background-color: $lightGray;
 	padding-top: 0;
 	.titleCont{
 		margin-top: 0;
@@ -23,31 +26,36 @@
 		.productDetails{
 			width: 60%;
 			padding: 10px;
+			margin: 0 auto;
 		}
 	}
 }
 
+.imageOfToy:hover{
+	border: 5px solid #D58669 !important;
+}
+
 #Gilbert {
-	background-color: #333;
-	color: #ddd;
+	background-color: $darkGray;
+	color: $lightGray;
 	.toyImage{
-	 border-right: 3px solid #ddd;
+	 border-right: 3px solid $lightGray;
 	}
 }
 
 #Bone_Shape {
-	background-color: #ddd;
-	color: #333;
+	background-color: $lightGray;
+	color: $darkGray;
 	.toyImage{
-	  border-right: 3px solid #333;
+	  border-right: 3px solid $darkGray;
 	}
 }
 
 #Tug_N_Toss {
-	background-color: #333;
-	color: #ddd;
+	background-color: $darkGray;
+	color: $lightGray;
 	.toyImage{
-	  border-right: 3px solid #ddd;
+	  border-right: 3px solid $lightGray;
 	}
 }
 

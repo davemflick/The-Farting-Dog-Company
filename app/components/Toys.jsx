@@ -12,6 +12,7 @@ const GIRAFFE = {
 	],
 	more: 'Gilbert the Farting Giraffe is a great excuse to blame the dog! Made of plush, non-toxic materials, the toy is designed for extra durability and extra laughs. Made in China. Non-toxic polyfill interior and the sound insert is ROHS compliant.',
 	price: 15,
+	options: false,
 }
 
 const ROPE_BONE ={
@@ -23,6 +24,7 @@ const ROPE_BONE ={
 	' DESIGNED FOR SMALL TO MEDIUM DOGS This toy is made of high quality, woven-rope ideal for small to medium sized dogs!',
 	' SOAK IN WATER AND FREEZE Great summer treat when it’s a little toasty outside!',],
 	price: 10,
+	options: true,
 	colors: ['red', 'pink', 'orange', 'green', 'blue'],
 }
 
@@ -36,6 +38,7 @@ const TUG_N_TOSS = {
 	' DESIGNED FOR SMALL TO MEDIUM DOGS This toy is made of high quality, woven-rope ideal for small to medium sized dogs!',
 	' SOAK IN WATER AND FREEZE Great summer treat when it’s a little toasty outside!',],
 	price: 10,
+	options: true,
 	colors: ['red', 'green', 'blue', 'teal', 'redBlue', 'tealBlue'],
 }
 
@@ -46,16 +49,17 @@ export default class Toys extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			modal: {on: {display: 'block'}, off: {display: 'none'}},
 			Gilbert_modal: {display: 'none'},
 			Bone_Shape_modal: {display: 'none'},
 			Tug_N_Toss_modal: {display: 'none'},
+			//fartSound: new Audio('./app/static/sounds/fart2.mov'),
 		}
 		this.showModal = this.showModal.bind(this);
 		this.closeModal = this.closeModal.bind(this);
 	}
 
 	showModal(e){
+		this.props.fartSound;
 		let id= e.target.id + '_modal';
 		this.state[id] = {display: 'block'};
 		this.setState(this.state);
@@ -78,9 +82,6 @@ export default class Toys extends React.Component{
 			   <h3>{toy.name}</h3>
 			   <p>{toy.description}</p>
 			   <p>{toy.more}</p>
-			   <ul className="aboutToy">
-			   	{toy.about.map((toy, i)=> <li key={i}>{toy}</li>)}
-			   </ul>
 			  </div>
 			</div>
 		)

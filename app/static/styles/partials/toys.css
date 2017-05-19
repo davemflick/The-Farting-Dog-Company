@@ -1,6 +1,6 @@
 .toyContainer {
   width: 100%;
-  background-color: #ddd;
+  background-color: #fff;
   padding-top: 0; }
   .toyContainer .titleCont {
     margin-top: 0;
@@ -19,25 +19,29 @@
         border-radius: 20px; }
     .toyContainer .individualToys .productDetails {
       width: 60%;
-      padding: 10px; }
+      padding: 10px;
+      margin: 0 auto; }
+
+.imageOfToy:hover {
+  border: 5px solid #D58669 !important; }
 
 #Gilbert {
-  background-color: #333;
-  color: #ddd; }
+  background-color: #7B7367;
+  color: #fff; }
   #Gilbert .toyImage {
-    border-right: 3px solid #ddd; }
+    border-right: 3px solid #fff; }
 
 #Bone_Shape {
-  background-color: #ddd;
-  color: #333; }
+  background-color: #fff;
+  color: #7B7367; }
   #Bone_Shape .toyImage {
-    border-right: 3px solid #333; }
+    border-right: 3px solid #7B7367; }
 
 #Tug_N_Toss {
-  background-color: #333;
-  color: #ddd; }
+  background-color: #7B7367;
+  color: #fff; }
   #Tug_N_Toss .toyImage {
-    border-right: 3px solid #ddd; }
+    border-right: 3px solid #fff; }
 
 @media screen and (max-width: 660px) {
   .individualToys .productDetails {
