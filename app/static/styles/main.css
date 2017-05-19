@@ -4,7 +4,7 @@
 body {
   margin: 0;
   width: 100%;
-  background-color: #ddd;
+  background-color: white;
   text-align: center;
   font-family: 'Shadows Into Light Two', cursive; }
 
@@ -102,9 +102,15 @@ body {
         border: 2px solid black;
         border-radius: 20px; }
     .toyContainer .individualToys .productDetails {
+      font-family: "Comic Sans MS", cursive, sans-serif;
       width: 60%;
       padding: 10px;
       margin: 0 auto; }
+      .toyContainer .individualToys .productDetails h3 {
+        font-family: 'Shadows Into Light Two', cursive; }
+
+.fivePercent {
+  font-family: "Comic Sans MS", cursive, sans-serif; }
 
 .purchase {
   margin-top: 10px; }
@@ -200,7 +206,8 @@ body {
     margin-top: 20px; }
 
 .nextPic:hover {
-  color: red; }
+  color: red;
+  cursor: pointer; }
 
 @media screen and (max-width: 925px) and (min-width: 800px) {
   .toyImages {
@@ -257,7 +264,8 @@ body {
 
 .footerContainer {
   padding: 1em;
-  font-family: none; }
+  font-family: none;
+  background-color: #ddd; }
 
 .soundAdjustment {
   width: 28px;
@@ -268,5 +276,9 @@ body {
   left: -20px; }
   .soundAdjustment #soundOn, .soundAdjustment #soundOff {
     font-size: 22px; }
+
+.contactContainer {
+  background-color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
 /*# sourceMappingURL=Main.css.map */

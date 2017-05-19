@@ -65,7 +65,7 @@ export default class ToyPopUp extends React.Component{
 		return(
 			<div className='toyModal' id={this.props.toyPop.id} style={this.props.styleModal} onClick={this.props.close}>
 				<div className="contentModal" id='not'>
-					<span className="close" id={this.props.toyPop.id} onClick={this.props.close}>X</span>
+					<span className="close" id={this.props.toyPop.id} onClick={this.props.close}>CLOSE</span>
 					<h1>{this.props.toyPop.name}</h1>
 					<div className="productContent">
 						<div className="toyImages">	

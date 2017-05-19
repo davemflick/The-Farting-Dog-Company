@@ -18,9 +18,15 @@
         border: 2px solid black;
         border-radius: 20px; }
     .toyContainer .individualToys .productDetails {
+      font-family: "Comic Sans MS", cursive, sans-serif;
       width: 60%;
       padding: 10px;
       margin: 0 auto; }
+      .toyContainer .individualToys .productDetails h3 {
+        font-family: 'Shadows Into Light Two', cursive; }
+
+.fivePercent {
+  font-family: "Comic Sans MS", cursive, sans-serif; }
 
 .purchase {
   margin-top: 10px; }

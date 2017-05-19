@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from './Header.jsx';
 import Banner from './Banner.jsx';
 import Toys from './Toys.jsx';
+import Contact from './Contact.jsx';
 import Footer from './Footer.jsx';
 
 export default class App extends React.Component{
@@ -49,6 +50,7 @@ export default class App extends React.Component{
         <Header fartSound={this.playFartSound}/>
         <Banner  soundOnOff={this.adjustSound} soundOn={this.state.soundOn} soundOff={this.state.soundOff}/>
         <Toys fartSound={this.playFartSound}/>
+        <Contact />
         <Footer />
       </div>
     )

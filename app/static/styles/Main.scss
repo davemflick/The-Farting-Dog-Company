@@ -3,7 +3,7 @@
 body{
 	margin: 0;
 	width: 100%;
-	background-color: #ddd;
+	background-color: white;
 	text-align: center;
 	font-family: 'Shadows Into Light Two', cursive;
 }
@@ -20,6 +20,7 @@ body{
 .footerContainer {
 	padding: 1em;
 	font-family: none;
+	background-color: #ddd;
 }
 
 
@@ -33,4 +34,9 @@ body{
 	#soundOn, #soundOff{
 		font-size: 22px;
 	}
+}
+
+.contactContainer{
+	background-color: white;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }

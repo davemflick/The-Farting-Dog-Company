@@ -64,7 +64,9 @@
 
 .nextPic:hover{
     color: red;
+    cursor: pointer;
 }
+
 
 @media screen and (max-width: 925px) and (min-width: 800px){
     .toyImages{
