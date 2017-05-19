@@ -23,4 +23,14 @@ body{
 }
 
 
-
+.soundAdjustment {
+	width: 28px;
+	height: 28px;
+	position: relative;
+	float: right;
+	top: -30px;
+	left: -20px;
+	#soundOn, #soundOff{
+		font-size: 22px;
+	}
+}

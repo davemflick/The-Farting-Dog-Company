@@ -22,6 +22,9 @@
       padding: 10px;
       margin: 0 auto; }
 
+.purchase {
+  margin-top: 10px; }
+
 .imageOfToy:hover {
   border: 5px solid #D58669 !important; }
 

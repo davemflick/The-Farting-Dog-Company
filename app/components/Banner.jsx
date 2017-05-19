@@ -5,6 +5,10 @@ export default class Banner extends React.Component{
     return(
     <div className="banCont" id="about">
      <div className="banner">
+     <div className="soundAdjustment" onClick={this.props.soundOnOff}> 
+      <div id="soundOn" style={this.props.soundOn} >🔈</div>
+      <div id="soundOff" style={this.props.soundOff} > 🔇</div>
+      </div>
       <div className='titleCont'>
        <h1 className="header"> THE FARTING DOG COMPANY </h1>
        <img className="headLogo"  src="./app/static/images/logo1.png" />
@@ -12,7 +16,7 @@ export default class Banner extends React.Component{
        <div className="descriptionContainer">
          <div className='logoContainer'>
          </div>
-         <h3 className="aboutFDC"> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain."</h3>
+         <h3 className="aboutFDC"> "This will be a mission statement or something else you want. The more I look at this font, the harder I find it to read... What do you think? Also, I need you to provide me with some original photos (possibly sounds as well), don't want to infringe on any copyright."</h3>
        </div>
      </div>
     </div>

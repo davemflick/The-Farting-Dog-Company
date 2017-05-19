@@ -56,6 +56,7 @@ export default class ToyPopUp extends React.Component{
 							<div className="ifColors">
 							{this.addColors(this.props.toyPop)}
 							</div>
+							<p className="purchase"> Purchase this Item through <a href={this.props.toyPop.amazon} target="_blank">Amazon.</a></p>
 						</div>
 					</div>
 				</div>

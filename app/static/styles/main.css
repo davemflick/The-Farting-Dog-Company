@@ -106,6 +106,9 @@ body {
       padding: 10px;
       margin: 0 auto; }
 
+.purchase {
+  margin-top: 10px; }
+
 .imageOfToy:hover {
   border: 5px solid #D58669 !important; }
 
@@ -246,5 +249,15 @@ body {
 .footerContainer {
   padding: 1em;
   font-family: none; }
+
+.soundAdjustment {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  float: right;
+  top: -30px;
+  left: -20px; }
+  .soundAdjustment #soundOn, .soundAdjustment #soundOff {
+    font-size: 22px; }
 
 /*# sourceMappingURL=Main.css.map */

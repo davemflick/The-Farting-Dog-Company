@@ -13,6 +13,7 @@ const GIRAFFE = {
 	more: 'Gilbert the Farting Giraffe is a great excuse to blame the dog! Made of plush, non-toxic materials, the toy is designed for extra durability and extra laughs. Made in China. Non-toxic polyfill interior and the sound insert is ROHS compliant.',
 	price: 15,
 	options: false,
+	amazon: 'https://www.amazon.com',
 }
 
 const ROPE_BONE ={
@@ -26,6 +27,7 @@ const ROPE_BONE ={
 	price: 10,
 	options: true,
 	colors: ['red', 'pink', 'orange', 'green', 'blue'],
+	amazon: 'https://www.amazon.com',
 }
 
 const TUG_N_TOSS = {
@@ -40,6 +42,7 @@ const TUG_N_TOSS = {
 	price: 10,
 	options: true,
 	colors: ['red', 'green', 'blue', 'teal', 'redBlue', 'tealBlue'],
+	amazon: 'https://www.amazon.com',
 }
 
 const PROCEEDS = { strong: "5% OF PROFITS DONATED FOR HOMELESS PETS",

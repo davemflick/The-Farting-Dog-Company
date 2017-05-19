@@ -12,21 +12,42 @@ export default class App extends React.Component{
       fartSounds: [new Audio('./app/static/sounds/fart1.mov'),
       new Audio('./app/static/sounds/fart2.mov'),
       new Audio('./app/static/sounds/fart3.mov'),
-      new Audio('./app/static/sounds/fart4.mov')]
+      new Audio('./app/static/sounds/fart4.mov')],
+      playSounds: true,
+      soundOn: {display: 'block'},
+      soundOff: {display: 'none'},
     }
     this.playFartSound = this.playFartSound.bind(this);
+    this.adjustSound = this.adjustSound.bind(this);
   }
+
 
   playFartSound(e){
-  	let rand = Math.floor(Math.random() * this.state.fartSounds.length);
-    this.state.fartSounds[rand].play();
+    if(this.state.playSounds){
+      let rand = Math.floor(Math.random() * this.state.fartSounds.length);
+      this.state.fartSounds[rand].play();
+    }
   }
 
+  adjustSound(){
+    let block = {display: 'block'};
+    let none = {display: 'none'};
+    let play = this.state.playSounds;
+    if(play){
+      this.state.soundOn = none;
+      this.state.soundOff = block;
+    } else {
+      this.state.soundOn = block;
+      this.state.soundOff = none;
+    }
+    this.state.playSounds = !play;
+    this.setState(this.state);
+}
   render(){
     return(
       <div>
         <Header fartSound={this.playFartSound}/>
-        <Banner />
+        <Banner  soundOnOff={this.adjustSound} soundOn={this.state.soundOn} soundOff={this.state.soundOff}/>
         <Toys fartSound={this.playFartSound}/>
         <Footer />
       </div>
