@@ -13,6 +13,7 @@ module.exports = {
   output: {
     path: __dirname, 
     filename: 'bundle.js',
+    publicPath: '/app/'
   },
   module: {
     loaders: [
