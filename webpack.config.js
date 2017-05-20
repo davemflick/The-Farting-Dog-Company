@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
-  inject: 'body'
+  inject: false
 });
 
 module.exports = {
@@ -24,7 +24,8 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         }
-      }
+      },
+      {test: /\.scss$/, loader: 'style-loader!css-loader!scss-loader!sass-loader'},
     ]
   },
   plugins: [HtmlWebpackPluginConfig]
