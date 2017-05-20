@@ -194,9 +194,11 @@ body {
     .productContent .toyImages .nextPic {
       border: none;
       background: none;
-      font-size: 25px;
+      font-size: 20px;
       position: relative;
-      left: 10px; }
+      left: 135px;
+      top: 140px;
+      color: rgba(180, 180, 180, 0.5); }
     .productContent .toyImages .poppedImg {
       margin: 0 auto;
       height: 250px;
@@ -205,8 +207,11 @@ body {
     width: 50%;
     margin-top: 20px; }
 
+.poppedImg:hover {
+  cursor: pointer; }
+
 .nextPic:hover {
-  color: red;
+  color: rgba(150, 150, 150, 0.9) !important;
   cursor: pointer; }
 
 @media screen and (max-width: 925px) and (min-width: 800px) {

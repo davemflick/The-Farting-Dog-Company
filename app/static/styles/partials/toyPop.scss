@@ -45,9 +45,11 @@
         .nextPic{
             border: none;
             background: none;
-            font-size: 25px;
+            font-size: 20px;
             position: relative;
-            left: 10px;
+            left: 135px;
+            top: 140px;
+            color: rgba(180,180,180,.5);
         }
         .poppedImg{
             margin: 0 auto;
@@ -62,8 +64,12 @@
     }
 }
 
+
+.poppedImg:hover{
+    cursor: pointer;
+}
 .nextPic:hover{
-    color: red;
+    color: rgba(150,150,150, .9) !important;
     cursor: pointer;
 }
 

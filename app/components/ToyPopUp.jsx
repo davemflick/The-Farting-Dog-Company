@@ -1,4 +1,5 @@
 import React from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 export default class ToyPopUp extends React.Component{
 	constructor(props){
@@ -7,17 +8,18 @@ export default class ToyPopUp extends React.Component{
 			imageShown: {display: 'block'},
 			imageHidden: {display: 'none'},
 			currentImg: this.props.curImg,
-			totalImgs: this.props.toyImgColl.length,
+			totalImgs: this.props.toyImgColl,
 		}
 		this.switchPic = this.switchPic.bind(this);
 	}
 
-	mapImages(imgs){
+	mapImages(){
+	let imgs = this.state.totalImgs;
 	let images = [];
 	let cur = this.state.currentImg;
 		for(var i=0; i<imgs.length; i++){
 			if(i === cur){
-				images.push(<img src={'./app/static/images/' + imgs[cur]} key={i} style={this.state.imageShown} className="poppedImg" />);
+				images.push(<img src={'./app/static/images/' + imgs[cur]} key={i} style={this.state.imageShown} onClick={this.switchPic} className="poppedImg" />);
 			} else {
 				images.push(<img src={'./app/static/images/' + imgs[i]} key={i} style={this.state.imageHidden} className="poppedImg" />);
 			}
@@ -26,15 +28,15 @@ export default class ToyPopUp extends React.Component{
 	}
 
 	switchPic(){
-		let len = this.state.totalImgs;
+		let len = this.state.totalImgs.length;
 		if(len > 1){
 			if(this.state.currentImg === len-1) {
 			this.state.currentImg = 0;
 		} else {
 			this.state.currentImg++;
 		}
-		this.setState(this.state);
 		this.mapImages();
+		this.setState(this.state);
 		}
 
 	}
@@ -69,8 +71,8 @@ export default class ToyPopUp extends React.Component{
 					<h1>{this.props.toyPop.name}</h1>
 					<div className="productContent">
 						<div className="toyImages">	
-							<div className="nextPic" onClick={this.switchPic}> ➤➤➤➤➤ </div>
-							{this.mapImages(this.props.toyImgColl)}
+							<div className="nextPic" onClick={this.switchPic}> ➤ </div>
+							{this.mapImages()}
 						</div>
 						<div className="productDetails">
 							<h4>{this.props.toyPop.description}</h4>
