@@ -31,6 +31,5 @@ module.exports = {
   plugins: [HtmlWebpackPluginConfig]
 };
 
-//TO RUN -> webpack-dev-server --progress --colors
 
 //Help from https://blog.hellojs.org/setting-up-your-react-es6-development-environment-with-webpack-express-and-babel-e2a53994ade
