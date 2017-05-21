@@ -11,13 +11,6 @@
       height: 50px;
       margin-left: 15px; }
 
-@media screen and (max-width: 550px) {
-  .titleCont {
-    flex-wrap: wrap; }
-    .titleCont .header {
-      width: 100%; }
-    .titleCont .headLogo {
-      margin-bottom: 20px; } }
 .banner {
   height: 600px;
   width: 100%;
@@ -36,11 +29,5 @@
       width: 55%;
       color: #fff;
       margin: 0; }
-  @media screen and (max-width: 767px) {
-    .banner .descriptionContainer {
-      flex-wrap: wrap;
-      height: 250px; }
-      .banner .descriptionContainer .aboutFDC {
-        width: 100%; } }
 
 /*# sourceMappingURL=banner.css.map */

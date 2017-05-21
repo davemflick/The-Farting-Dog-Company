@@ -1,4 +1,4 @@
-.toyModal {
+div .toyModal {
 	display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 15; /* Sit on top */
@@ -7,9 +7,9 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: #E5DFCD !important; /* Fallback color */
-    background-color: rgb(229,223,205) !important; /* Black w/ opacity */
-    color: #444!important;
+    background-color: #E5DFCD; /* Fallback color */
+    background-color: rgb(229,223,205); /* Black w/ opacity */
+    color: #444;
     .contentModal {
 	    background-color: white;
 	    margin: 15% auto; /* 15% from the top and centered */
@@ -22,6 +22,7 @@
 /* The Close Button */
 .close {
     color: #aaa;
+    background-color: none;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -42,60 +43,30 @@
     .toyImages{
         width: 30%;
         margin-top: 20px;
-        .nextPic{
-            border: none;
-            background: none;
-            font-size: 20px;
-            position: relative;
-            left: 135px;
-            top: 140px;
-            color: rgba(180,180,180,.5);
-        }
         .poppedImg{
             margin: 0 auto;
-            height: 250px;
-
             border-radius: 20px;
         }
     }
-    .productDetails{
+    .productDetailsPop{
         width: 50%;
         margin-top: 20px;
     }
 }
 
-
+.nextPic{
+    border: none;
+    background: none;
+    font-size: 20px;
+    position: relative;
+    color: rgba(180,180,180,.5);
+}
 .poppedImg:hover{
     cursor: pointer;
 }
 .nextPic:hover{
     color: rgba(150,150,150, .9) !important;
     cursor: pointer;
-}
-
-
-@media screen and (max-width: 925px) and (min-width: 800px){
-    .toyImages{
-        width: 35% !important;
-    }
-}
-@media screen and (max-width: 799px){
-    .productContent{
-        flex-wrap: wrap !important;
-        .toyImages{
-            width: 100% !important;
-        }
-        .productDetails{
-            width: 100% !important;
-        }
-    }
-
-}
-
-@media screen and (max-width: 400px){
-    .poppedImg {
-        height: 200px !important;
-    }
 }
 
 

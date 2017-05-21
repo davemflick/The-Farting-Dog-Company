@@ -1,19 +1,5 @@
 
 
-@media (max-width: 767px){
-	.navbar-brand{
-		display: flex;
-		justify-content: center;
-		.navLogo {
-			height: 42px !important;
-			width: 55px  !important;
-			margin-top: -14px !important;
-			background-image: url('../images/logo1.png') !important;
-			background-size: cover !important;
-		}
-	}
-}
-
 .navbar-brand{
 	.navLogo {
 	height: 115px;

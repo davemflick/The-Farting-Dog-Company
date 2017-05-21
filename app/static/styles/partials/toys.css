@@ -1,6 +1,5 @@
 .toyContainer {
   width: 100%;
-  background-color: #fff;
   padding-top: 0; }
   .toyContainer .titleCont {
     margin-top: 0;
@@ -18,12 +17,12 @@
         border: 2px solid black;
         border-radius: 20px; }
     .toyContainer .individualToys .productDetails {
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: "Comic Sans MS", sans-serif;
       width: 60%;
       padding: 10px;
       margin: 0 auto; }
       .toyContainer .individualToys .productDetails h3 {
-        font-family: 'Shadows Into Light Two', cursive; }
+        font-family: 'Shadows Into Light Two'; }
 
 .fivePercent {
   font-family: "Comic Sans MS", cursive, sans-serif; }

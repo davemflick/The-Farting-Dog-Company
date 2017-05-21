@@ -3,7 +3,6 @@ $lightGray: #fff;
 
 .toyContainer {
 	width: 100%;
-	background-color: $lightGray;
 	padding-top: 0;
 	.titleCont{
 		margin-top: 0;
@@ -24,12 +23,12 @@ $lightGray: #fff;
 			}
 		}
 		.productDetails{
-			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-family: "Comic Sans MS", sans-serif;
 			width: 60%;
 			padding: 10px;
 			margin: 0 auto;
 			h3{
-				font-family: 'Shadows Into Light Two', cursive;
+				font-family: 'Shadows Into Light Two';
 			}
 		}
 	}

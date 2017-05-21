@@ -4,20 +4,9 @@
 body {
   margin: 0;
   width: 100%;
-  background-color: white;
   text-align: center;
-  font-family: 'Shadows Into Light Two', cursive; }
+  font-family: 'Shadows Into Light Two'; }
 
-@media (max-width: 767px) {
-  .navbar-brand {
-    display: flex;
-    justify-content: center; }
-    .navbar-brand .navLogo {
-      height: 42px !important;
-      width: 55px  !important;
-      margin-top: -14px !important;
-      background-image: url("../images/logo1.png") !important;
-      background-size: cover !important; } }
 .navbar-brand .navLogo {
   height: 115px;
   width: 115px;
@@ -50,13 +39,6 @@ body {
       height: 50px;
       margin-left: 15px; }
 
-@media screen and (max-width: 550px) {
-  .titleCont {
-    flex-wrap: wrap; }
-    .titleCont .header {
-      width: 100%; }
-    .titleCont .headLogo {
-      margin-bottom: 20px; } }
 .banner {
   height: 600px;
   width: 100%;
@@ -75,16 +57,9 @@ body {
       width: 55%;
       color: #fff;
       margin: 0; }
-  @media screen and (max-width: 767px) {
-    .banner .descriptionContainer {
-      flex-wrap: wrap;
-      height: 250px; }
-      .banner .descriptionContainer .aboutFDC {
-        width: 100%; } }
 
 .toyContainer {
   width: 100%;
-  background-color: #fff;
   padding-top: 0; }
   .toyContainer .titleCont {
     margin-top: 0;
@@ -102,12 +77,12 @@ body {
         border: 2px solid black;
         border-radius: 20px; }
     .toyContainer .individualToys .productDetails {
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: "Comic Sans MS", sans-serif;
       width: 60%;
       padding: 10px;
       margin: 0 auto; }
       .toyContainer .individualToys .productDetails h3 {
-        font-family: 'Shadows Into Light Two', cursive; }
+        font-family: 'Shadows Into Light Two'; }
 
 .fivePercent {
   font-family: "Comic Sans MS", cursive, sans-serif; }
@@ -142,7 +117,7 @@ body {
   .individualToys .toyImage {
     width: 100% !important;
     border-right: none !important; } }
-.toyModal {
+div .toyModal {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -157,12 +132,12 @@ body {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: #E5DFCD !important;
+  background-color: #E5DFCD;
   /* Fallback color */
-  background-color: #e5dfcd !important;
+  background-color: #e5dfcd;
   /* Black w/ opacity */
-  color: #444 !important; }
-  .toyModal .contentModal {
+  color: #444; }
+  div .toyModal .contentModal {
     background-color: white;
     margin: 15% auto;
     /* 15% from the top and centered */
@@ -174,6 +149,7 @@ body {
 /* The Close Button */
 .close {
   color: #aaa;
+  background-color: none;
   float: right;
   font-size: 28px;
   font-weight: bold; }
@@ -191,21 +167,19 @@ body {
   .productContent .toyImages {
     width: 30%;
     margin-top: 20px; }
-    .productContent .toyImages .nextPic {
-      border: none;
-      background: none;
-      font-size: 20px;
-      position: relative;
-      left: 135px;
-      top: 140px;
-      color: rgba(180, 180, 180, 0.5); }
     .productContent .toyImages .poppedImg {
       margin: 0 auto;
-      height: 250px;
       border-radius: 20px; }
-  .productContent .productDetails {
+  .productContent .productDetailsPop {
     width: 50%;
     margin-top: 20px; }
+
+.nextPic {
+  border: none;
+  background: none;
+  font-size: 20px;
+  position: relative;
+  color: rgba(180, 180, 180, 0.5); }
 
 .poppedImg:hover {
   cursor: pointer; }
@@ -214,19 +188,6 @@ body {
   color: rgba(150, 150, 150, 0.9) !important;
   cursor: pointer; }
 
-@media screen and (max-width: 925px) and (min-width: 800px) {
-  .toyImages {
-    width: 35% !important; } }
-@media screen and (max-width: 799px) {
-  .productContent {
-    flex-wrap: wrap !important; }
-    .productContent .toyImages {
-      width: 100% !important; }
-    .productContent .productDetails {
-      width: 100% !important; } }
-@media screen and (max-width: 400px) {
-  .poppedImg {
-    height: 200px !important; } }
 .ifColors {
   display: flex;
   justify-content: center;
@@ -285,5 +246,56 @@ body {
 .contactContainer {
   background-color: white;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    display: flex;
+    justify-content: center; }
+    .navbar-brand .navLogo {
+      height: 42px;
+      width: 55px;
+      margin-top: -14px;
+      background-image: url("../images/logo1.png");
+      background-size: cover; } }
+@media screen and (max-width: 550px) {
+  .titleCont {
+    flex-wrap: wrap; }
+    .titleCont .header {
+      width: 100%; }
+    .titleCont .headLogo {
+      margin-bottom: 20px; } }
+@media screen and (max-width: 767px) {
+  .descriptionContainer {
+    flex-wrap: wrap;
+    height: 250px; }
+    .descriptionContainer .aboutFDC {
+      width: 100%; } }
+@media screen and (max-width: 660px) {
+  .individualToys .productDetails {
+    width: 100%; }
+  .individualToys .toyImage {
+    width: 100%;
+    border-right: none; } }
+@media all and (max-width: 799px) {
+  .productContent {
+    flex-wrap: wrap; }
+    .productContent .toyImages {
+      width: 100%; }
+    .productContent .productDetailsPop {
+      width: 100%; } }
+@media all and (min-width: 401px) {
+  .poppedImg {
+    height: 250px; }
+
+  .nextPic {
+    left: 135px;
+    top: 140px; } }
+@media all and (max-width: 400px) {
+  .poppedImg {
+    height: 200px; }
+
+  .nextPic {
+    top: 120px !important;
+    left: 112px !important; } }
 
 /*# sourceMappingURL=Main.css.map */

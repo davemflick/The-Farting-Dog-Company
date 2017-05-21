@@ -24,6 +24,9 @@ export default class ToyPopUp extends React.Component{
 				images.push(<img src={'./app/static/images/' + imgs[i]} key={i} style={this.state.imageHidden} className="poppedImg" />);
 			}
 		}
+		if(this.state.totalImgs.length > 1){
+			images.splice(0,0,(<div className="nextPic" key='nPic' onClick={this.switchPic}> ➤ </div>));
+		}
 		return images;
 	}
 
@@ -65,16 +68,15 @@ export default class ToyPopUp extends React.Component{
 
 	render(){
 		return(
-			<div className='toyModal' id={this.props.toyPop.id} style={this.props.styleModal} onClick={this.props.close}>
+			<div className='toyModal' style={this.props.styleModal} onClick={this.props.close}>
 				<div className="contentModal" id='not'>
 					<span className="close" id={this.props.toyPop.id} onClick={this.props.close}>CLOSE</span>
 					<h1>{this.props.toyPop.name}</h1>
 					<div className="productContent">
-						<div className="toyImages">	
-							<div className="nextPic" onClick={this.switchPic}> ➤ </div>
+						<div className="toyImages">
 							{this.mapImages()}
 						</div>
-						<div className="productDetails">
+						<div className="productDetailsPop">
 							<h4>{this.props.toyPop.description}</h4>
 							<p>Starting at ${this.props.toyPop.price}</p>
 							<ul className="aboutToy">
