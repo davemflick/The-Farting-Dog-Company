@@ -111,12 +111,6 @@ body {
   #Tug_N_Toss .toyImage {
     border-right: 3px solid #fff; }
 
-@media screen and (max-width: 660px) {
-  .individualToys .productDetails {
-    width: 100% !important; }
-  .individualToys .toyImage {
-    width: 100% !important;
-    border-right: none !important; } }
 div .toyModal {
   display: none;
   /* Hidden by default */
@@ -247,7 +241,7 @@ div .toyModal {
   background-color: white;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .navbar-brand {
     display: flex;
     justify-content: center; }
@@ -256,7 +250,16 @@ div .toyModal {
       width: 55px;
       margin-top: -14px;
       background-image: url("../images/logo1.png");
-      background-size: cover; } }
+      background-size: cover; }
+
+  .descriptionContainer, #descripContid {
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px; }
+    .descriptionContainer .aboutFDC, .descriptionContainer #aboutFDCid, #descripContid .aboutFDC, #descripContid #aboutFDCid {
+      width: 100%; } }
 @media screen and (max-width: 550px) {
   .titleCont {
     flex-wrap: wrap; }
@@ -264,16 +267,10 @@ div .toyModal {
       width: 100%; }
     .titleCont .headLogo {
       margin-bottom: 20px; } }
-@media screen and (max-width: 767px) {
-  .descriptionContainer {
-    flex-wrap: wrap;
-    height: 250px; }
-    .descriptionContainer .aboutFDC {
-      width: 100%; } }
 @media screen and (max-width: 660px) {
-  .individualToys .productDetails {
+  .individualToys .productDetails, .individualToys #prodDetId {
     width: 100%; }
-  .individualToys .toyImage {
+  .individualToys .toyImage, .individualToys #toyImageId {
     width: 100%;
     border-right: none; } }
 @media all and (max-width: 799px) {
@@ -288,7 +285,7 @@ div .toyModal {
     height: 250px; }
 
   .nextPic {
-    left: 135px;
+    left: 155px;
     top: 140px; } }
 @media all and (max-width: 400px) {
   .poppedImg {

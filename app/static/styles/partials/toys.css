@@ -51,11 +51,4 @@
   #Tug_N_Toss .toyImage {
     border-right: 3px solid #fff; }
 
-@media screen and (max-width: 660px) {
-  .individualToys .productDetails {
-    width: 100% !important; }
-  .individualToys .toyImage {
-    width: 100% !important;
-    border-right: none !important; } }
-
 /*# sourceMappingURL=toys.css.map */

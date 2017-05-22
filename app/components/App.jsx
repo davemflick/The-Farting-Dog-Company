@@ -14,9 +14,9 @@ export default class App extends React.Component{
       new Audio('./app/static/sounds/fart2.mov'),
       new Audio('./app/static/sounds/fart3.mov'),
       new Audio('./app/static/sounds/fart4.mov')],
-      playSounds: true,
-      soundOn: {display: 'block'},
-      soundOff: {display: 'none'},
+      playSounds: false,
+      soundOn: {display: 'none'},
+      soundOff: {display: 'block'},
     }
     this.playFartSound = this.playFartSound.bind(this);
     this.adjustSound = this.adjustSound.bind(this);

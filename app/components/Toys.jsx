@@ -34,11 +34,11 @@ export default class Toys extends React.Component{
 	createToy(toy){
 		return(
 			<div className="individualToys" id={toy.id}>
-			  <div className="toyImage">
+			  <div className="toyImage" id="toyImageId">
 			   <img className="imageOfToy" src={"./app/static/images/" + toy.pic[0]} alt={toy.name} id={toy.id} onClick={this.showModal} />
 			  </div>
 			  <ToyPopUp id={toy.id + 'modal'} toyPop={toy} styleModal={this.state[toy.id + '_modal']} toyImgColl={toy.pic} close={this.closeModal} curImg={this.state.curImg} />
-			  <div className="productDetails">
+			  <div className="productDetails" id="prodDetId">
 			   <h3>{toy.name}</h3>
 			   <p>{toy.description}</p>
 			   <p>{toy.more}</p>

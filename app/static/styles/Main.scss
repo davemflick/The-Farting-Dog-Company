@@ -41,7 +41,7 @@ body{
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 600px){
 	.navbar-brand{
 		display: flex;
 		justify-content: center;
@@ -51,6 +51,16 @@ body{
 			margin-top: -14px;
 			background-image: url('../images/logo1.png');
 			background-size: cover;
+		}
+	}
+	.descriptionContainer, #descripContid{
+		flex-wrap: wrap;
+		height: 250px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding-top: 30px;
+		.aboutFDC, #aboutFDCid{
+			width: 100%;
 		}
 	}
 }
@@ -67,22 +77,13 @@ body{
 	}
 }
 
-@media screen and (max-width: 767px){
-		.descriptionContainer{
-			flex-wrap: wrap;
-			height: 250px;
-			.aboutFDC {
-				width: 100%;
-			}
-		}
-	}
 
 @media screen and (max-width: 660px){
 	.individualToys{
-		.productDetails{
+		.productDetails, #prodDetId{
 			width: 100% ;
 		}
-		.toyImage{
+		.toyImage, #toyImageId{
 			width: 100% ;
 			border-right: none;
 		}
@@ -91,7 +92,7 @@ body{
 
 @media all and (max-width: 799px){
     .productContent{
-        flex-wrap: wrap ;
+        flex-wrap: wrap;
         .toyImages{
             width: 100% ;
         }
@@ -107,7 +108,7 @@ body{
         height: 250px;
     }
     .nextPic{
-        left: 135px;
+        left: 155px;
         top: 140px;
     }
 }
