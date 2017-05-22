@@ -33,22 +33,16 @@
 .imageOfToy:hover {
   border: 5px solid #D58669 !important; }
 
-#Gilbert {
+.odd {
   background-color: #7B7367;
   color: #fff; }
-  #Gilbert .toyImage {
+  .odd .toyImage {
     border-right: 3px solid #fff; }
 
-#Bone_Shape {
+.even {
   background-color: #fff;
   color: #7B7367; }
-  #Bone_Shape .toyImage {
+  .even .toyImage {
     border-right: 3px solid #7B7367; }
-
-#Tug_N_Toss {
-  background-color: #7B7367;
-  color: #fff; }
-  #Tug_N_Toss .toyImage {
-    border-right: 3px solid #fff; }
 
 /*# sourceMappingURL=toys.css.map */

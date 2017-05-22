@@ -93,23 +93,17 @@ body {
 .imageOfToy:hover {
   border: 5px solid #D58669 !important; }
 
-#Gilbert {
+.odd {
   background-color: #7B7367;
   color: #fff; }
-  #Gilbert .toyImage {
+  .odd .toyImage {
     border-right: 3px solid #fff; }
 
-#Bone_Shape {
+.even {
   background-color: #fff;
   color: #7B7367; }
-  #Bone_Shape .toyImage {
+  .even .toyImage {
     border-right: 3px solid #7B7367; }
-
-#Tug_N_Toss {
-  background-color: #7B7367;
-  color: #fff; }
-  #Tug_N_Toss .toyImage {
-    border-right: 3px solid #fff; }
 
 div .toyModal {
   display: none;
@@ -142,15 +136,15 @@ div .toyModal {
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  background-color: none;
+  color: #0C077E;
+  background-color: white;
   float: right;
   font-size: 28px;
   font-weight: bold; }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #1107F7;
   text-decoration: none;
   cursor: pointer; }
 
@@ -291,8 +285,8 @@ div .toyModal {
   .poppedImg {
     height: 200px; }
 
-  .nextPic {
-    top: 120px !important;
-    left: 112px !important; } }
+  .nextPic, #nextPicId {
+    top: 120px;
+    left: 112px; } }
 
 /*# sourceMappingURL=Main.css.map */

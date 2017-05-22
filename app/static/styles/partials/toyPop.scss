@@ -20,9 +20,9 @@ div .toyModal {
 }
 
 /* The Close Button */
-.close {
-    color: #aaa;
-    background-color: none;
+.close{
+    color: #0C077E;
+    background-color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -30,7 +30,7 @@ div .toyModal {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #1107F7;
     text-decoration: none;
     cursor: pointer;
 }

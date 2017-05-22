@@ -94,10 +94,10 @@ body{
     .productContent{
         flex-wrap: wrap;
         .toyImages{
-            width: 100% ;
+            width: 100%;
         }
         .productDetailsPop{
-            width: 100% ;
+            width: 100%;
         }
     }
 
@@ -117,8 +117,8 @@ body{
     .poppedImg {
         height: 200px;
     }
-     .nextPic{
-        top: 120px !important;
-        left: 112px !important;
+     .nextPic, #nextPicId{
+        top: 120px;
+        left: 112px;
     }
 }

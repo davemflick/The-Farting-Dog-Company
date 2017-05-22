@@ -25,7 +25,7 @@ export default class ToyPopUp extends React.Component{
 			}
 		}
 		if(this.state.totalImgs.length > 1){
-			images.splice(0,0,(<div className="nextPic" key='nPic' onClick={this.switchPic}> ➤ </div>));
+			images.splice(0,0,(<div className="nextPic" key='nPic' id="nextPicId" onClick={this.switchPic}> ➤ </div>));
 		}
 		return images;
 	}
@@ -70,7 +70,7 @@ export default class ToyPopUp extends React.Component{
 		return(
 			<div className='toyModal' style={this.props.styleModal} onClick={this.props.close}>
 				<div className="contentModal" id='not'>
-					<span className="close" id={this.props.toyPop.id} onClick={this.props.close}>CLOSE</span>
+					<span className="close" id={this.props.toyPop.id} data-close='closer' onClick={this.props.close}>CLOSE</span>
 					<h1>{this.props.toyPop.name}</h1>
 					<div className="productContent">
 						<div className="toyImages">
@@ -87,6 +87,7 @@ export default class ToyPopUp extends React.Component{
 							{this.addColors(this.props.toyPop)}
 							</div>
 							<p className="purchase"> Purchase this Item through <a href={this.props.toyPop.amazon} target="_blank">Amazon.</a></p>
+							<p className="unavailableToys">(All Toys are currently Unavailable. Correct Amazon links will be put in place when toys become available)</p>
 						</div>
 					</div>
 				</div>

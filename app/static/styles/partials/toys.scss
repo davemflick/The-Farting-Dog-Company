@@ -45,7 +45,7 @@ $lightGray: #fff;
 	border: 5px solid #D58669 !important;
 }
 
-#Gilbert {
+.odd {
 	background-color: $darkGray;
 	color: $lightGray;
 	.toyImage{
@@ -53,7 +53,7 @@ $lightGray: #fff;
 	}
 }
 
-#Bone_Shape {
+.even {
 	background-color: $lightGray;
 	color: $darkGray;
 	.toyImage{
@@ -61,12 +61,6 @@ $lightGray: #fff;
 	}
 }
 
-#Tug_N_Toss {
-	background-color: $darkGray;
-	color: $lightGray;
-	.toyImage{
-	  border-right: 3px solid $lightGray;
-	}
-}
+
 
 
