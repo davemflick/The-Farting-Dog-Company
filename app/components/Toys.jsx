@@ -19,6 +19,13 @@ export default class Toys extends React.Component{
 		this.toyBackground = this.toyBackground.bind(this);
 	}
 
+	componentDidMount(){
+		this.state.toyCount = 1;
+	}
+	componentDidUpdate(){
+		this.state.toyCount = 1;
+	}
+
 	showModal(e){
 		this.props.fartSound();
 		let id= e.target.id + '_modal';
@@ -73,6 +80,7 @@ export default class Toys extends React.Component{
 				{this.createToy(GIRAFFE) }
 				{this.createToy(ROPE_BONE)}
 				{this.createToy(TUG_N_TOSS)}
+
 			</div>
 		)
 	}
