@@ -13,6 +13,10 @@ export default class ToyPopUp extends React.Component{
 		this.switchPic = this.switchPic.bind(this);
 	}
 
+	//Take in array of images from toy object. Create an img take for each.
+	//Depending on currentImg in state, display that image and hide the rest.
+	//Add Next Picture Button only if more than one picture
+	//Push the new image tags into an array, return array.
 	mapImages(){
 	let imgs = this.state.totalImgs;
 	let images = [];
@@ -30,6 +34,10 @@ export default class ToyPopUp extends React.Component{
 		return images;
 	}
 
+
+	//Increase currentImg by one in state if not last image.
+	//Reset currentImg to zero if it reaches last image in array.
+	//Call map images and setState to re-render which picture is displayed.
 	switchPic(){
 		let len = this.state.totalImgs.length;
 		if(len > 1){
@@ -44,7 +52,7 @@ export default class ToyPopUp extends React.Component{
 
 	}
 
-
+	//If toy has mulitple options (i.e Color choices). Show options.
 	isOptions(opt){
 		if(opt.options){
 			return(
@@ -54,7 +62,9 @@ export default class ToyPopUp extends React.Component{
 		}
 	}
 
-
+	//Find all toy color options from toy object.
+	// Create div with corresponding id + color; push to color array.
+	//return color array to be rendered on screen
 	addColors(col){
 		if(col.colors){
 			let colorArr = [<p className="colOptions" key="key">Colors</p>];

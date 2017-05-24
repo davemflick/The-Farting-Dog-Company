@@ -22,7 +22,7 @@ export default class App extends React.Component{
     this.adjustSound = this.adjustSound.bind(this);
   }
 
-
+//If Sound is on, create random number 0-3; Use as index to select fart sound to play from array in state.fartSounds 
   playFartSound(e){
     if(this.state.playSounds){
       let rand = Math.floor(Math.random() * this.state.fartSounds.length);
@@ -30,6 +30,8 @@ export default class App extends React.Component{
     }
   }
 
+  //Set display of sound icon to on(no red line) or off(red line).
+  //Set this.state.playSounds to true or false to determine if sounds play on click events.
   adjustSound(){
     let block = {display: 'block'};
     let none = {display: 'none'};

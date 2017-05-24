@@ -18,7 +18,7 @@ export default class Toys extends React.Component{
 		this.closeModal = this.closeModal.bind(this);
 		this.toyBackground = this.toyBackground.bind(this);
 	}
-
+	//Make Sure to reset state.toyCount to 1 on initial load and every Update. So correct styles load.
 	componentDidMount(){
 		this.state.toyCount = 1;
 	}
@@ -26,13 +26,14 @@ export default class Toys extends React.Component{
 		this.state.toyCount = 1;
 	}
 
+	//Bring up corresponding toy modal when clicked.
 	showModal(e){
 		this.props.fartSound();
 		let id= e.target.id + '_modal';
 		this.state[id] = {display: 'block'};
 		this.setState(this.state);
 	}
-
+	//Close corresponding toy modal when clicked
 	closeModal(e){
 		let id= e.target.id + '_modal';
 		this.state[id] = {display: 'none'};
@@ -40,6 +41,7 @@ export default class Toys extends React.Component{
 		this.setState(this.state);
 	}
 
+	//Determine backgrounds of each toy depending on order shown. Updates toyCount. Uses evens and odds.
 	toyBackground(){
 		let tC = this.state.toyCount;
 		let oddEven = '';
@@ -53,6 +55,7 @@ export default class Toys extends React.Component{
 		return oddEven;
 	}
 	
+	//Create a Toy in Product list for Each Toy Object Given from state.js
 	createToy(toy){
 		return(
 			<div className={this.toyBackground() + ' individualToys'} id={toy.id}>
